@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Kumar Sah | GST Practitioner & Financial Consultant</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font import for professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-accent {
+            color: #4f46e5; /* Deep Indigo for accent */
+        }
+        .bg-accent {
+            background-color: #4f46e5;
+        }
+        /* Optimized scrolling for better efficiency */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Header & Navigation (UPDATED with Logo Image) -->
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0 flex items-center space-x-3">
+                    <!-- Your uploaded image used as the logo -->
+                    <img 
+                        src="logo1.png" 
+                        alt="Vinod Kumar Sah Logo" 
+                        class="w-10 h-10 rounded-full object-cover shadow-lg border border-gray-700"
+                    >
+                    <div>
+                        <span class="text-xl font-bold text-white block leading-tight">Vinod Sah</span>
+                        <span class="block text-xs font-medium text-accent leading-tight">GST Practitioner</span>
+                    </div>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">Services</a>
+                    <a href="#projections" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">Projections</a>
+                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">About</a>
+                    <a href="#contact" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium ml-4 hover:bg-indigo-600 transition duration-150 shadow-md">Get in Touch</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#projections" class="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projections</a>
+                <a href="#about" class="text-gray-300 hover:bg-gray-800 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#contact" class="bg-accent text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-indigo-600">Contact Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="py-20 md:py-32 text-center bg-gray-800/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">
+                    Expert <span class="text-accent">Tax & Accounting</span> Solutions
+                </h1>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-400">
+                    Vinod Kumar Sah provides specialized services in GST compliance, Income Tax Filing, and comprehensive Computrised Accounting for businesses and individuals.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#services" class="bg-accent text-white font-semibold py-3 px-8 rounded-xl shadow-xl hover:bg-indigo-600 transform hover:scale-105 transition duration-300">
+                        Explore Services
+                    </a>
+                    <a href="#contact" class="bg-gray-700 text-white font-semibold py-3 px-8 rounded-xl shadow-xl hover:bg-gray-600 transform hover:scale-105 transition duration-300">
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-base text-accent font-semibold tracking-wide uppercase">Our Expertise</h2>
+                    <p class="mt-2 text-3xl md:text-4xl leading-8 font-extrabold tracking-tight text-white">
+                        Specialized Services for Your Business
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                    
+                    <!-- Service Card 1: Accounting -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-accent transition duration-300 transform hover:translate-y-[-4px]">
+                        <i data-lucide="calculator" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Accounting Solutions</h3>
+                        <p class="text-gray-400 text-sm">
+                            Comprehensive **Computrised Accounting** services to manage your books, ensure accuracy, and provide clear financial insights.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2: GST -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-accent transition duration-300 transform hover:translate-y-[-4px]">
+                        <i data-lucide="receipt-text" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">GST Services</h3>
+                        <ul class="text-gray-400 text-sm list-disc pl-5 space-y-1">
+                            <li>GST Registration & Compliance</li>
+                            <li>GST Return Filing (GSTR-1, 3B, etc.)</li>
+                            <li>E-Way Bill Generation & Management</li>
+                            <li>Annual Return Filing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3: Income Tax & TDS -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-accent transition duration-300 transform hover:translate-y-[-4px]">
+                        <i data-lucide="wallet-2" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Income Tax & TDS</h3>
+                        <ul class="text-gray-400 text-sm list-disc pl-5 space-y-1">
+                            <li>Income Tax Return Filing (ITR-1 to ITR-7)</li>
+                            <li>**TDS Return Filing** (Quarterly Compliance)</li>
+                            <li>Tax Planning and Advisory</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 4: Licenses -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-accent transition duration-300 transform hover:translate-y-[-4px]">
+                        <i data-lucide="bookmark" class="w-8 h-8 text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Registration & Licensing</h3>
+                        <p class="text-gray-400 text-sm">
+                            Assistance with **Udyam/Trade License Registration** and other essential regulatory compliance procedures for business startup and operation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Projections Section -->
+        <section id="projections" class="py-16 md:py-24 bg-gray-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-base text-accent font-semibold tracking-wide uppercase">Strategic Insight</h2>
+                    <p class="mt-2 text-3xl md:text-4xl leading-8 font-extrabold tracking-tight text-white">
+                        Estimated Projected Balance Sheet Sample
+                    </p>
+                    <p class="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
+                        Demonstrating capability in financial forecasting to support strategic business decisions and loan/investment applications.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl shadow-2xl p-6 lg:p-10 border border-gray-700">
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-3">Projected Financial Year: 2026-27</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Assets Side -->
+                        <div>
+                            <h4 class="text-xl font-bold text-green-400 mb-4 flex items-center">
+                                <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i> ASSETS
+                            </h4>
+                            <ul class="space-y-3">
+                                <li class="flex justify-between border-b border-gray-700 pb-2">
+                                    <span class="text-gray-300">Current Assets (Cash, Receivables)</span>
+                                    <span class="font-semibold text-white">₹ 15,00,000</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-700 pb-2">
+                                    <span class="text-gray-300">Fixed Assets (Plant & Machinery)</span>
+                                    <span class="font-semibold text-white">₹ 45,00,000</span>
+                                </li>
+                                <li class="flex justify-between border-b-2 border-green-400 pt-3 pb-2 font-extrabold text-white">
+                                    <span>TOTAL ASSETS</span>
+                                    <span class="text-green-400">₹ 60,00,000</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Liabilities & Equity Side -->
+                        <div>
+                            <h4 class="text-xl font-bold text-red-400 mb-4 flex items-center">
+                                <i data-lucide="minus-circle" class="w-5 h-5 mr-2"></i> LIABILITIES & EQUITY
+                            </h4>
+                            <ul class="space-y-3">
+                                <li class="flex justify-between border-b border-gray-700 pb-2">
+                                    <span class="text-gray-300">Shareholder's Equity (Capital)</span>
+                                    <span class="font-semibold text-white">₹ 35,00,000</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-700 pb-2">
+                                    <span class="text-gray-300">Non-Current Liabilities (Term Loan)</span>
+                                    <span class="font-semibold text-white">₹ 10,00,000</span>
+                                </li>
+                                <li class="flex justify-between border-b border-gray-700 pb-2">
+                                    <span class="text-gray-300">Current Liabilities (Payables)</span>
+                                    <span class="font-semibold text-white">₹ 15,00,000</span>
+                                </li>
+                                <li class="flex justify-between border-b-2 border-red-400 pt-3 pb-2 font-extrabold text-white">
+                                    <span>TOTAL LIABILITIES & EQUITY</span>
+                                    <span class="text-red-400">₹ 60,00,000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="mt-8 text-center text-sm italic text-gray-500">
+                        Note: This is an illustrative sample. Actual projections are based on detailed client data and assumptions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Bio Section (UPDATED WITH PHOTO) -->
+        <section id="about" class="py-16 md:py-24 bg-gray-900">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center md:space-x-10">
+                    <!-- Profile Photo Placeholder -->
+                    <div class="flex-shrink-0 mb-6 md:mb-0">
+                        <img 
+                            src="https://placehold.co/160x160/4f46e5/ffffff?text=VK+Sah" 
+                            alt="Vinod Kumar Sah Professional Photo" 
+                            class="w-40 h-40 rounded-full object-cover border-4 border-accent shadow-2xl transition duration-300 hover:shadow-accent/50"
+                        >
+                    </div>
+                    <!-- Text Content -->
+                    <div class="md:text-left text-center">
+                        <h2 class="text-3xl font-extrabold text-white mb-4">About Vinod Kumar Sah</h2>
+                        <p class="text-gray-300 mb-4">
+                            A highly experienced and certified **GST Practitioner** dedicated to simplifying the complexities of Goods and Service Tax (GST) for clients. My mission is to ensure **100% compliance** and maximum efficiency in your financial operations.
+                        </p>
+                        <div class="mb-4 space-y-1 text-gray-300 text-sm">
+                            <h4 class="font-semibold text-accent text-lg mt-4 mb-2">Key Qualifications:</h4>
+                            <p class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-green-400"></i> **B Com Honours** (Solid academic foundation)</p>
+                            <p class="flex items-center"><i data-lucide="check-circle" class="w-4 h-4 mr-2 text-green-400"></i> Certified **GST Practitioner** (GSTP ID: 101900002283GP1)</p>
+                        </div>
+                        <p class="text-gray-300">
+                            I provide tailored advice and hands-on support for all your compliance needs, from daily computerized accounting to yearly Income Tax and **TDS Filings**. My focus is on providing reliable, timely, and precise services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    
+                    <!-- Contact Details -->
+                    <div class="space-y-8">
+                        <h2 class="text-3xl font-extrabold text-white mb-4">Get in Touch Today</h2>
+                        <p class="text-gray-400">
+                            For a confidential consultation regarding your accounting or taxation requirements, please contact me directly using the details below.
+                        </p>
+                        
+                        <!-- Contact Info Card -->
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 p-3 bg-gray-800 rounded-lg transition duration-200 hover:bg-gray-700/70">
+                                <i data-lucide="phone" class="w-6 h-6 text-accent"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white">Call Me</h4>
+                                    <a href="tel:+919007312533" class="text-gray-300 hover:text-accent">+91 9007312533</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-3 bg-gray-800 rounded-lg transition duration-200 hover:bg-gray-700/70">
+                                <i data-lucide="mail" class="w-6 h-6 text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white">Email</h4>
+                                    <a href="mailto:sahvinodkumar1989@gmail.com" class="text-gray-300 hover:text-accent">sahvinodkumar1989@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-3 bg-gray-800 rounded-lg transition duration-200 hover:bg-gray-700/70">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white">Office Location</h4>
+                                    <p class="text-gray-300">
+                                        Nayatola, Bhagwatnagar, Kumhrar, <br>
+                                        Patna - 800026
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form (Enabled for Google Sheet Submission) -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl">
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-accent focus:border-accent transition duration-150" placeholder="Enter your full name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-accent focus:border-accent transition duration-150" placeholder="your.email@example.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Query (e.g., Income Tax Filing)</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-accent focus:border-accent transition duration-150" placeholder="I need assistance with..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-white font-bold py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg">
+                                Send Message
+                            </button>
+                            <div id="form-message" class="mt-4 text-center hidden p-3 rounded-lg bg-green-500 text-white font-semibold"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; <span id="current-year"></span> Vinod Kumar Sah, GST Practitioner. All rights reserved.</p>
+            <p class="mt-2 text-xs">Based in Patna, offering reliable financial and tax compliance services.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form Submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide Icons
+            lucide.createIcons();
+            
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            const toggleMobileMenu = () => {
+                mobileMenu.classList.toggle('hidden');
+            };
+
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+            // Close menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
+
+
+            // --- Google Sheets Integration Logic (User MUST customize the placeholders below) ---
+
+            // IMPORTANT: Replace 'YOUR_GOOGLE_FORM_POST_URL_HERE' with the actual action URL of your Google Form
+            const GOOGLE_FORM_URL = 'YOUR_GOOGLE_FORM_POST_URL_HERE'; 
+
+            // IMPORTANT: Replace the generic 'entry.XXX' IDs with the actual entry IDs from your Google Form fields
+            const entryMap = {
+                name: 'entry.123456789', 
+                email: 'entry.987654321', 
+                message: 'entry.112233445'
+            };
+            
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Check for setup error
+                if (GOOGLE_FORM_URL.includes('YOUR_GOOGLE_FORM_POST_URL_HERE')) {
+                    formMessage.classList.remove('hidden', 'bg-green-500');
+                    formMessage.classList.add('bg-red-500');
+                    formMessage.textContent = 'Setup Error: Please update the GOOGLE_FORM_URL and entryMap in the code.';
+                    // Show error for a longer period since it's a setup issue
+                    setTimeout(() => { formMessage.classList.add('hidden'); }, 8000); 
+                    return;
+                }
+
+                submitButton.disabled = true;
+                submitButton.textContent = 'Sending...';
+                formMessage.classList.add('hidden');
+
+                const formData = new FormData(e.target);
+                const postData = new URLSearchParams();
+
+                // Map form data to Google Form entry IDs
+                for (const [key, value] of formData.entries()) {
+                    if (entryMap[key]) {
+                        postData.append(entryMap[key], value);
+                    }
+                }
+
+                // Submit data using fetch (Using no-cors mode for Google Form submission)
+                fetch(GOOGLE_FORM_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', 
+                    body: postData
+                })
+                .then(() => {
+                    // This block executes even on "success" due to 'no-cors' mode, but the fetch generally succeeds if the URL is correct.
+                    formMessage.classList.remove('hidden', 'bg-red-500');
+                    formMessage.classList.add('bg-green-500');
+                    formMessage.textContent = 'Success! Your message has been sent.';
+                    contactForm.reset();
+                })
+                .catch(() => {
+                    // This catch block handles actual network errors, which are rare.
+                    formMessage.classList.remove('hidden', 'bg-green-500');
+                    formMessage.classList.add('bg-red-500');
+                    formMessage.textContent = 'An error occurred. Please try again or call directly.';
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Send Message';
+                    // Hide message after 5 seconds
+                    setTimeout(() => { formMessage.classList.add('hidden'); }, 5000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
